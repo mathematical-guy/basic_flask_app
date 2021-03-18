@@ -38,7 +38,7 @@ def result():
     
     return render_template("result.htm", result = result)
 
-app.run()
+app.run(port = 4444)
 
 
 
