@@ -15,7 +15,7 @@ def classifier(datapoint):
 
 
 
-@app.route('/')
+@app.route('/', methods = ["GET"])
 def hello_world():
     return render_template('index.htm')
 
@@ -38,7 +38,8 @@ def result():
     
     return render_template("result.htm", result = result)
 
-app.run(port = 4444)
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 
