@@ -32,19 +32,19 @@
     -->
     <form action="/result" method="POST">
         <div class="mb-3">
-          <input type="text" name ="sepal_length"  class="form-control" id="sepal_length" placeholder="Enter Sepal length">
+          <input type="number" name ="sepal_length"  class="form-control" id="sepal_length" placeholder="Enter Sepal length" step="any" min="0" max="7">
         </div>
         
         <div class="mb-3">
-          <input type="text" name = "sepal_width" class="form-control" id="sepal_width" placeholder="Enter Sepal width">
+          <input type="number" name = "sepal_width" class="form-control" id="sepal_width" placeholder="Enter Sepal width" step="any" min="0" max="7">
         </div>
 
         <div class="mb-3">
-          <input type="text" name ="petal_length"  class="form-control" id="petal_length" placeholder="Enter Petal length">
+          <input type="number" name ="petal_length"  class="form-control" id="petal_length" placeholder="Enter Petal length" step = "any" min="0" max="7">
         </div>
 
         <div class="mb-3">
-          <input type="text" name = "petal_width" class="form-control" id="petal_width" placeholder="Enter Petal width">
+          <input type="number" name = "petal_width" class="form-control" id="petal_width" placeholder="Enter Petal width" step= "any" min="0" max="7">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
